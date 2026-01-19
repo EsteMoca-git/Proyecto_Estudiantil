@@ -1,0 +1,77 @@
+
+/* Footer*/
+
+.footer {
+background-color: #333;
+color: #f1f1f1;
+text-align: center;
+padding: 5px;
+margin-top: auto;
+bottom: 0;
+width: 100%;
+font-size: 14px;
+
+}
+
+.footer a {
+color: #f1f1f1;
+margin: 0 10px;
+text-decoration: none;
+font-weight: bold;
+list-style: none;
+
+}
+.footer-links{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+}
+ul  .face:hover{
+    background-color: #0f7fef;
+    border-radius: 08px;
+}
+ul .tiktok:hover{
+    background-color: black;
+    border-radius: 10px;
+}
+ul .insta:hover{
+    background: linear-gradient(45deg, #F58529, #FEDA77, #DD2A7B, #8134AF, #515BD4);
+
+    border-radius: 10px;
+}
+ul .whatsap:hover{
+    background-color: rgb(10, 225, 78);
+    border-radius: 10px;
+    
+}
+
+li a i{
+    font-size: 25px;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+
+.footer a:hover {
+text-decoration: underline;
+
+}
+
+.footer-content {
+max-width: 800px;
+margin: auto;
+}
+
+@media (max-width: 600px) {
+.footer {
+    font-size: 12px;
+    padding: 8px;
+    }
+.footer-links {
+    flex-direction: column;
+    gap: 5px;
+    }
+}
+
+

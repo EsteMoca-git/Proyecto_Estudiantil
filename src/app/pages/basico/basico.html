@@ -1,0 +1,46 @@
+<h1>Nivel Básico</h1>
+
+<main class="contenedor">
+<!--Titulos y dentro de los títulos los temas con otro FOR-->
+    <section class="section1">
+        <div class="container-Section">
+            @for (section of sections; track section.id) {
+                <div class="item">
+                    <h3>{{section.title}}</h3>
+                </div>
+
+                <ul>
+                    @for (item of section.items; track $index) {
+                        <li>
+                            <a [routerLink]="['/basico', section.id, item.route]">{{item.name}}</a>
+                        </li>
+                    }
+                </ul>
+            }
+        </div>
+    </section>
+
+    <!--Contenido dinámico (contenido)-->
+    <section class="seccion2">
+        <router-outlet></router-outlet>
+    
+    </section>
+
+    
+    <section class="seccion1">
+        <div class="contacto1">
+        <h2>Contacto</h2>
+
+        <ul>
+            <li><a href="lista">Lista de contactos</a></li>
+            <li><a href="agregar">Agregar o eliminar contactos</a></li>
+            <li><a href="sincronnizar">Sincronización de contacto</a></li>
+            <li><a href="chat">Chat en línea</a></li>
+        </ul>
+        </div>
+    </section>
+
+
+    </main>
+
+

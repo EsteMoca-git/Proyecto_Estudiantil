@@ -1,0 +1,15 @@
+<section>
+    @if (tema) {
+    <h2>{{ tema.name }}</h2>
+
+    @if (tema.content) {
+        <p>{{ tema.content }}</p>
+    } @else {
+        <p>Contenido en construcción </p>
+    }
+}
+
+    <p>Este es el componente Tema</p>
+</section>
+
+

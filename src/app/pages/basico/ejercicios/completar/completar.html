@@ -1,0 +1,12 @@
+<h2>Ejercicio: Verbo To Be</h2>
+
+<p>I _____ a student.</p>
+
+<input type="text" [(ngModel)]="userAnswer" placeholder="Escribe tu respuesta" >
+<button (click)="checkAnswer()">Verificar</button>
+
+@if (result === 'incorrect') {
+    <p class="incorrect">Intenta de nuevo</p>
+}@else{
+    <p class="correct">Respuesta correcta</p>
+}

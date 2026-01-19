@@ -1,0 +1,68 @@
+<main>
+    <h2>Registro de Usuario</h2>
+
+<form class="form-Register" [formGroup]="userForm" (ngSubmit)="userKeep()">
+    <div class="itemForm">
+        <div class="item">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" formControlName="nombre" placeholder="Juan David" />
+            @if (nombre.invalid && nombre.touched) {
+                <small class="handleError">El campo es requerido!</small>
+            }
+        </div>
+        <div class="item">
+            <label for="apellido" >Apellido: </label>
+            <input type="text" id="apellido" formControlName="apellido" placeholder="Pérez Rodirguez" />
+            @if (apellido.invalid && apellido.touched) {
+                <small class="handleError">El campo es requerido!</small>
+            }
+        </div>
+        <div class="item">
+            <label for="telefono">Telefono: </label>
+            <input type="text" id="telefono" formControlName="telefono" placeholder="Telefono" />
+            @if (telefono.invalid && telefono.touched) {
+                <small class="handleError">El campo es requerido y debe tener 10 carácteres!</small>
+            }
+        </div>
+        <div class="item">
+            <label for="fechaNacimiento">Fecha de Nacimiento: </label>
+            <input type="date" id="fechaNacimiento" formControlName="fechaNacimiento" placeholder="" />
+            @if (fechaNacimiento.invalid && fechaNacimiento.touched) {
+                <small class="handleError">Debe llenar este campo!</small>
+            }
+        </div>
+    </div>
+
+    <div class="itemForm">
+        <div class="item">
+            <label for="correo">Correo Electronico: </label>
+            <input type="email" id="correo" formControlName="correo" placeholder="juan_perez@gmail.com" />
+            @if (correo.invalid && correo.touched) {
+                <small class="handleError">El campo es requerido!</small> 
+            }
+        </div>
+        <div class="item">
+            <label for="contraseña">Contraseña: </label>
+            <input type="password" id="contraseña" formControlName="password" placeholder="Contraseña" />
+            @if (password.invalid && password.touched) {
+                <small class="handleError">Debe llenar este campo y la contraseña debe coincidir</small>
+            }
+        </div>
+        <div class="item">
+            <label for="confirmarContraseña">Confirmar Cotraseña: </label>
+            <input type="password" id="confirmarContraseña" formControlName="confirmPassword" placeholder="Contraseña" />
+            @if (userForm.errors && userForm.errors['contraseñaNoCoincide'] && confirmPassword.value !== '' ) {
+                <small class="handleError">Las contraseñas no coinciden</small>
+            }
+        </div>
+        <div class="item">
+            <button type="submit" [disabled]="userForm.invalid">Guardar</button>
+        </div>
+    </div>
+
+
+</form>
+
+
+
+</main>

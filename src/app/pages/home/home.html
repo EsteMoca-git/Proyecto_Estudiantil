@@ -1,0 +1,22 @@
+<div class="contenedor-main">
+    <div class="imagen1">
+        <img src="/assets/imagen.png" alt="imagen">
+    </div>
+
+    <div class="form-container">
+    <button class="boton-up" routerLink="/form">Registrarse</button>
+    <form class="form" [formGroup]="infoForm" (ngSubmit)="enviarForm()" >
+        <h2>Iniciar Sesión</h2>
+
+        <label for="correo" >Igresar Correo</label>
+        <input type="email" id="correo" formControlName = "correo" placeholder="Usuario@gmail.com" >
+
+        <label for="contraseña" >Ingresar Conraseña</label>
+        <input type="password" id="contraseña" formControlName="contraseña" placeholder="contraseña">
+
+        <button class="enviar-form" [disabled]="infoForm.invalid" >Enviar</button>
+    </form>
+
+</div>
+
+</div>

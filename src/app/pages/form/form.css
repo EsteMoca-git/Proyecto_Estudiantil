@@ -1,0 +1,112 @@
+main {
+    margin: 0;
+    padding: 0;
+    height: 68vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Contenedor principal */
+.form-Register {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 30px;                     
+    width: 80%;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Columna del formulario */
+.itemForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em; 
+    flex: 1;    
+}
+
+/* Cada campo */
+.item {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9fb;
+    border-radius: 6px;
+    text-align: left;
+    padding: 10px;
+    gap: 4px;
+}
+
+label {
+        font-weight: bold;
+        color: #444;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+/* borde rojo para los validators */
+input.ng-invalid.ng-touched {
+    border: 1px solid #e74c3c; 
+}
+
+/* Botón */
+.item button {
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    align-self: center; 
+}
+
+.item button:hover {
+        background-color: #357ab8;
+}
+
+.item button:active {
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* Mensajes de error */
+.handleError {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    margin-top: 2px;
+}
+
+/* Columna de imagen         */
+.form-image {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
