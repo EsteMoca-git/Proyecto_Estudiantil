@@ -1,0 +1,30 @@
+.alfabeto{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+button{
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    
+}
+
+
+/*Efecto en los botones */
+.alfabeto button.active{
+    background-color: #4caf50;
+    color: white;
+    transform: scale(1.1);
+}
+
+/*Manejo de  error*/
+.error{
+    color: #e74c3c;
+    margin-bottom: 10px;
+    font-weight: bold;
+    position: absolute;
+    top: 550px;
+
+}

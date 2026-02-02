@@ -1,12 +1,21 @@
 <h2>Ejercicio: Verbo To Be</h2>
 
-<p>I _____ a student.</p>
+<p>{{ currentExercise?.sentence }}</p>
 
-<input type="text" [(ngModel)]="userAnswer" placeholder="Escribe tu respuesta" >
-<button (click)="checkAnswer()">Verificar</button>
+<input type="text"
+[(ngModel)]="userAnswer"
+placeholder="Escribe tu respuesta"/>
 
+<button class="verificar" (click)="checkAnswer()">Verificar</button>
 @if (result === 'incorrect') {
-    <p class="incorrect">Intenta de nuevo</p>
-}@else{
-    <p class="correct">Respuesta correcta</p>
+    <p class="incorrect">Respuesta incorrecta <i class="fa-notdog fa-solid fa-xmark"></i> <br>  Intenta de nuevo </p>
 }
+@if(result === 'correct') {
+    <p class="correct">Respuesta correcta  <i class="fa-notdog-duo fa-solid fa-check"></i></p>
+}
+@if (result) {
+    
+}
+<br>
+
+<button class="siguiente" (click)="nextExercise()"><i class="fa-notdog-duo fa-solid fa-angle-right"></i></button>

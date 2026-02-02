@@ -1,15 +1,16 @@
+<!--Aquí se renderiza el componente Alfabeto-->
 <section>
-    @if (tema) {
-    <h2>{{ tema.name }}</h2>
-
-    @if (tema.content) {
-        <p>{{ tema.content }}</p>
+    @if (componentToRender) {
+    <ng-container *ngComponentOutlet="componentToRender"  class="container"></ng-container>
+    
     } @else {
-        <p>Contenido en construcción </p>
+        <h2>{{tema?.name}}</h2>
+        <h2>{{tema?.content}}</h2>
     }
-}
 
-    <p>Este es el componente Tema</p>
+
+
 </section>
+
 
 

@@ -7,7 +7,8 @@
         "id": "alfabeto",
         "name": "Alfabeto",
         "route": "alfabeto",
-        "content": "El alfabeto en inglés tiene 26 letras..."
+        "component": "alfabeto",
+        "content": ""
     }, 
     {
         "id": "articulos",
@@ -46,6 +47,49 @@
             "route": "comida",
             "content": "Comidas y bebidas para incrementar tu vocabulario"
         }
+    ]
+},
+{
+    "id": "ejercicios",
+    "title": "Ejercicios",
+    "items":[
+        {
+            "id": "completar",
+            "name": "Completar",
+            "route": "completar",
+            "content":"Completar las oraciones:"
+        },
+        {
+            "id":"sopa_de_letras",
+            "name": "Sopa de letras",
+            "route": "sopa_de_letras",
+            "content": "Sopa de letras para incrementar vocabulario"
+        },
+        {
+            "id": "crusidrama",
+            "name": "Crusidrama",
+            "route": "crusidrama",
+            "content": "Interactivo para crear vocabulario y comprensión"
+        },
+        { 
+            "id": "rompecabezas", 
+            "name": "Rompecabezas", 
+            "route": "rompecabezas", 
+            "content": "Arma piezas para desarrollar la lógica" 
+        }, 
+        { 
+            "id": "memoria", 
+            "name": "Juego de memoria", 
+            "route": "memoria", 
+            "content": "Encuentra pares para ejercitar la memoria" 
+        }, 
+        { 
+            "id": "sudoku", 
+            "name": "Sudoku", 
+            "route": "sudoku", 
+            "content": "Ejercicio numérico para mejorar concentración" 
+        }
+    
     ]
 }
 ]

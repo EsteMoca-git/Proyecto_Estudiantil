@@ -12,7 +12,7 @@
                 <ul>
                     @for (item of section.items; track $index) {
                         <li>
-                            <a [routerLink]="['/basico', section.id, item.route]">{{item.name}}</a>
+                            <a [routerLink]="['/basico', section.id, item.id]">{{item.name}}</a>
                         </li>
                     }
                 </ul>

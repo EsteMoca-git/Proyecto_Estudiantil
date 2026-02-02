@@ -1,1 +1,14 @@
-<p>alfabeto works!</p>
+<h2>Alfabeto en inglés</h2>
+<div class="alfabeto">
+
+    @if (erroMessage) {
+        <p class="error">{{erroMessage}}</p>
+    }
+    @for (letter of letters; track letter) {
+        <button (click)="playSound(letter)"
+        [disabled]="isPlaying"
+        [class.active]="letter === activateLetter">{{letter}}</button>
+    }
+</div>
+
+

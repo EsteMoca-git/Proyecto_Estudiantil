@@ -13,8 +13,8 @@ import { Completar } from './pages/basico/ejercicios/completar/completar';
 export const routes: Routes = [
     {path: '', component: Home},
     {path: 'basico', component: Basico, children: [
-        {path: 'ejercicios/completar', component: Completar},
-        {path: ':seccion/:tema', component: Tema},
+        {path: 'ejercicios/:tema', component: Completar},
+        {path: ':seccion/:tema', component: Tema}
         
     ]},
 

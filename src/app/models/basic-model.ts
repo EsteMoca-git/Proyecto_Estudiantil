@@ -8,4 +8,5 @@ export interface BasicItem {
     name: string;
     route: string;
     content?: string;
+    component?: string;
 }
