@@ -14,7 +14,7 @@ button{
 
 /*Efecto en los botones */
 .alfabeto button.active{
-    background-color: #4caf50;
+    background-color: #3498db;
     color: white;
     transform: scale(1.1);
 }

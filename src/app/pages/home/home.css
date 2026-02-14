@@ -56,7 +56,7 @@ input::placeholder{
 
 .boton-up{
     position: absolute;
-    background-color: rgb(4, 22, 101);
+    background-color: rgb(113, 134, 227);
     font-size: 18px;
     width: 150px;
     right: 50px;
@@ -73,7 +73,7 @@ button:active{
 }
 
 .enviar-form{
-    background-color: rgb(4, 22, 101);
+    background-color: rgb(113, 134, 227);
     font-size: 18px;
     width: 150px;
     margin-top: 15px;
@@ -85,6 +85,9 @@ button:active{
     letter-spacing: 02px;
     font-weight: bold;
 
+}
+.enviar-form:active{
+    background-color: rgb(113, 134, 227) ;
 }
 /* Media query*/
 @media(max-width: 960px){

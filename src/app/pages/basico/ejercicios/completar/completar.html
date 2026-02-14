@@ -1,21 +1,54 @@
+<div class="seccion2">
 <h2>Ejercicio: Verbo To Be</h2>
 
-<p>{{ currentExercise?.sentence }}</p>
+@if (currentExercise) {
+    <p class="sentence">
+    {{ currentExercise?.sentence }}
+    </p>
 
-<input type="text"
-[(ngModel)]="userAnswer"
-placeholder="Escribe tu respuesta"/>
+    <div class="item">
+    <input
+        type="text"
+        [(ngModel)]="userAnswer"
+        placeholder="Escribe tu respuesta"
+    />
 
-<button class="verificar" (click)="checkAnswer()">Verificar</button>
-@if (result === 'incorrect') {
-    <p class="incorrect">Respuesta incorrecta <i class="fa-notdog fa-solid fa-xmark"></i> <br>  Intenta de nuevo </p>
-}
-@if(result === 'correct') {
-    <p class="correct">Respuesta correcta  <i class="fa-notdog-duo fa-solid fa-check"></i></p>
-}
-@if (result) {
+    <button class="verificar" (click)="checkAnswer()">
+        Verificar
+    </button>
+    </div>
     
-}
-<br>
 
-<button class="siguiente" (click)="nextExercise()"><i class="fa-notdog-duo fa-solid fa-angle-right"></i></button>
+    @if (result === 'correct') {
+        <p class="correct">Respuesta correcta  
+        <i class="fa-solid fa-check"></i>
+        </p>
+    }
+
+    @if (result === 'incorrect') {
+        <p class="incorrect">Respuesta incorrecta 
+        <i class="fa-solid fa-xmark"></i> 
+        <br>Intenta de nuevo 
+        </p>
+    }
+    
+    
+
+    <div class="nav-buttom">
+    <button class="anterior" 
+        (click)="beforeExercise()"
+        [disabled]="currentIndex === 0">
+        <i class="fa-solid fa-angle-left"></i>
+    </button>
+
+    <button
+        class="siguiente"
+        (click)="nextExercise()"
+        [disabled]="currentIndex === ejercicios.length - 1">
+        <i class="fa-solid fa-angle-right"></i>
+    </button>
+    </div>
+} @else {
+    <p>Cargando ejercicio...</p>
+}
+</div>

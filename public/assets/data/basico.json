@@ -10,12 +10,7 @@
         "component": "alfabeto",
         "content": ""
     }, 
-    {
-        "id": "articulos",
-        "name": "Articulos definidos e indefinidos",
-        "route": "articulos",
-        "content": "Los articulos en inglés se dividen en definidos e indefinidos"
-    },
+    
     {
         "id": "pronombres",
         "name": "Pronombres personales",
@@ -27,6 +22,12 @@
         "name": "Verbo To Be",
         "route": "tobe",
         "content": "El verbo To Be se usa para describir estados, identidades y características"
+    },
+    {
+        "id": "articulos",
+        "name": "Articulos definidos e indefinidos",
+        "route": "articulos",
+        "content": "Los articulos en inglés se dividen en definidos e indefinidos"
     }
     ]
 },
@@ -56,7 +57,7 @@
         {
             "id": "completar",
             "name": "Completar",
-            "route": "completar",
+            "route": "ejercicio/tobe",
             "content":"Completar las oraciones:"
         },
         {
