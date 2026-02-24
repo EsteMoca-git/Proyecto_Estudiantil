@@ -1,69 +1,104 @@
-
-h1{
-    text-align: center;
-}
-h2{
-    text-align: center;
-}
-a{
-    text-decoration: none;
-}
-.contenedor{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: rgb(211, 209, 209);
-    border-radius: 8px;
-    padding: 7px;
-    gap: 10px;
-}
-.seccion1{
-    background-color: rgb(164, 167, 160);
-    border-radius: 8px;
-    padding: 30px;
-}
-
-.container-Section{
-    background-color: rgb(217, 212, 212);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Contenedor principal */
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
     gap: 20px;
-    font-weight: bolder;
-    position: relative;
-    
-    border-radius: 8px;
-    padding: 30px 20px 30px;
-    
-    
-    
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
 }
-.container-Section div a{
-    color: white;
-}
-.item{
-    background-color: rgb(16, 8, 77);
-    padding: 25px;
-    border-radius: 8px;
-    font-size: 1.5em;
-    width: 110px;
+
+/* Título principal */
+h1 {
+    grid-column: 1 / -1; 
     text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
 }
 
-.container-Section div a:hover{
-    color: rgb(56, 108, 254);
-    
+/* Secciones generales */
+.seccion1 {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+/* Navegación lateral */
+.container-Section .item {
+    margin: 10px 0;
+}
 
+.container-Section a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    transition: color 0.3s;
+}
 
-/* Modo responsivo */
-@media (max-width: 760px) {
-    .contenedor{
-        background-color: black;
-        display: flex;
-        flex-direction: column;
-        
+.container-Section a:hover {
+    color: #3498db;
+}
+
+/* Contenido dinámico */
+.interactuar, .vocabulario1, .ejercicios1, .contacto1 {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.interactuar h2, .vocabulario1 h2, .ejercicios1 h2, .contacto1 h2 {
+    color: #110b66;
+    margin-bottom: 10px;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+li {
+    margin: 6px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #2c3e50;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #27ae60;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr; 
     }
-    
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .seccion1 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    a {
+        display: block;
+        padding: 8px 0;
+    }
 }

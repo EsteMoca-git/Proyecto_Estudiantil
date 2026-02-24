@@ -1,6 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { ValidatorFn, AbstractControl, FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { passwordMatchValidator,  } from '../../ValidacionContraseña.validator';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-form',
@@ -51,6 +52,12 @@ export class Form {
       
       this.userForm.reset()
       this.userForm.reset(null)
+      Swal.fire({
+        title: 'Éxitos',
+        text: 'El formulario se ha enviado correctamente',
+        icon: 'success',
+        confirmButtonText: 'Aceptar'
+      })
     }
 }
 

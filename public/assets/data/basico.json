@@ -57,7 +57,7 @@
         {
             "id": "completar",
             "name": "Completar",
-            "route": "ejercicio/tobe",
+            "route": "completar/tobe",
             "content":"Completar las oraciones:"
         },
         {
