@@ -1,0 +1,64 @@
+[
+{
+    "id": "presentacion",
+    "title": "Presentación del Curso",
+    "items": [
+    { "id": "introduccion", "name": "Presentación del curso", "route": "introduccion", "component": "introduccion", "content": "" }
+    ]
+},
+{
+    "id": "basico",
+    "title": "Nivel Básico (A1 - A2)",
+    "items": [
+    { "id": "alfabeto", "name": "Alfabeto", "route": "alfabeto", "component": "alfabeto", "content": "" },
+    { "id": "saludos", "name": "Saludos y presentaciones", "route": "saludos", "component": "saludos", "content": "" },
+    { "id": "to-be", "name": "Verbo To Be", "route": "to-be", "component": "to-be", "content": "" },
+    { "id": "articulos-sustantivos", "name": "Artículos y sustantivos", "route": "articulos-sustantivos", "component": "articulos-sustantivos", "content": "" },
+    { "id": "pronombres", "name": "Pronombres personales", "route": "pronombres", "component": "pronombres", "content": "" },
+    { "id": "vocabulario-basico", "name": "Vocabulario básico", "route": "vocabulario-basico", "component": "vocabulario-basico", "content": "" },
+    { "id": "preguntas-basicas", "name": "Preguntas básicas (What, Where, When...)", "route": "preguntas-basicas", "component": "preguntas-basicas", "content": "" },
+    { "id": "presente-simple", "name": "Presente simple", "route": "presente-simple", "component": "presente-simple", "content": "" },
+    { "id": "verbos-comunes", "name": "Verbos comunes", "route": "verbos-comunes", "component": "verbos-comunes", "content": "" },
+    { "id": "familia-numeros", "name": "Familia y números", "route": "familia-numeros", "component": "familia-numeros", "content": "" },
+    { "id": "colores-dias-meses", "name": "Colores, días, meses", "route": "colores-dias-meses", "component": "colores-dias-meses", "content": "" }
+    ]
+},
+{
+    "id": "intermedio",
+    "title": "Nivel Intermedio (B1 - B2)",
+    "items": [
+    { "id": "pasado-simple", "name": "Pasado simple", "route": "pasado-simple", "component": "pasado-simple", "content": "" },
+    { "id": "pasado-continuo", "name": "Pasado continuo", "route": "pasado-continuo", "component": "pasado-continuo", "content": "" },
+    { "id": "presente-perfecto", "name": "Presente perfecto", "route": "presente-perfecto", "component": "presente-perfecto", "content": "" },
+    { "id": "comparativos-superlativos", "name": "Comparativos y superlativos", "route": "comparativos-superlativos", "component": "comparativos-superlativos", "content": "" },
+    { "id": "futuro", "name": "Futuro (Will, Going to)", "route": "futuro", "component": "futuro", "content": "" },
+    { "id": "condicionales", "name": "Condicionales", "route": "condicionales", "component": "condicionales", "content": "" },
+    { "id": "modales", "name": "Verbos modales", "route": "modales", "component": "modales", "content": "" },
+    { "id": "pronombres-relativos", "name": "Pronombres relativos", "route": "pronombres-relativos", "component": "pronombres-relativos", "content": "" },
+    { "id": "vocabulario-intermedio", "name": "Vocabulario intermedio", "route": "vocabulario-intermedio", "component": "vocabulario-intermedio", "content": "" },
+    { "id": "ejercicios-practicos", "name": "Ejercicios prácticos", "route": "ejercicios-practicos", "component": "ejercicios-practicos", "content": "" }
+    ]
+},
+{
+    "id": "avanzado",
+    "title": "Nivel Avanzado (C1 - C2)",
+    "items": [
+    { "id": "voz-pasiva", "name": "Voz pasiva", "route": "voz-pasiva", "component": "voz-pasiva", "content": "" },
+    { "id": "reported-speech", "name": "Reported Speech", "route": "reported-speech", "component": "reported-speech", "content": "" },
+    { "id": "phrasal-verbs", "name": "Phrasal Verbs", "route": "phrasal-verbs", "component": "phrasal-verbs", "content": "" },
+    { "id": "expresiones-idiomaticas", "name": "Expresiones idiomáticas", "route": "expresiones-idiomaticas", "component": "expresiones-idiomaticas", "content": "" },
+    { "id": "gerundios-infinitivos", "name": "Gerundios e infinitivos", "route": "gerundios-infinitivos", "component": "gerundios-infinitivos", "content": "" },
+    { "id": "redaccion-formal", "name": "Redacción y discurso formal", "route": "redaccion-formal", "component": "redaccion-formal", "content": "" },
+    { "id": "vocabulario-avanzado", "name": "Vocabulario avanzado", "route": "vocabulario-avanzado", "component": "vocabulario-avanzado", "content": "" },
+    { "id": "ejercicios-avanzados", "name": "Ejercicios avanzados", "route": "ejercicios-avanzados", "component": "ejercicios-avanzados", "content": "" }
+    ]
+},
+{
+    "id": "examen",
+    "title": "Examen Final y Certificación",
+    "items": [
+    { "id": "examen-final", "name": "Examen final", "route": "examen-final", "component": "examen-final", "content": "" },
+    { "id": "certificado", "name": "Obtener certificado", "route": "certificado", "component": "certificado", "content": "" }
+    ]
+}
+]

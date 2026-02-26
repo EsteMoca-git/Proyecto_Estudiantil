@@ -1,4 +1,5 @@
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+
 import { Home } from './pages/home/home';
 import { Basico } from './pages/basico/basico';
 import { Intermedio } from './pages/intermedio/intermedio';
@@ -11,6 +12,8 @@ import { Completar } from './pages/basico/ejercicios/completar/completar';
 
 
 export const routes: Routes = [
+    
+    
     {path: '', component: Home},
     {path: 'basico', component: Basico, children: [
         {path: 'ejercicios/:tema', component: Completar},
@@ -18,7 +21,11 @@ export const routes: Routes = [
         
     ]},
 
-    {path: 'intermedio', component : Intermedio},
+    {path: 'intermedio', component : Intermedio, children: [
+        {path: 'ejercicios/:tema', component: Completar},
+        {path: ':seccion/:tema', component: Tema}
+        
+    ]},
     {path: 'avanzado', component: Avanzado},
     {path: 'desde_cero', component: DesdeCero},
     {path: 'form', component: Form},

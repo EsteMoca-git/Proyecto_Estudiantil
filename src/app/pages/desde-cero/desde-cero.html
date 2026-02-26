@@ -1,141 +1,52 @@
+<h1>Ingles Desde Cero</h1>
+
 <main class="contenedor">
-
-    <section class="seccion1">
+<!--Titulos y dentro de los títulos los temas con otro FOR-->
+    <section class="section1">
         <div class="container-Section">
-            
-            <h2>Introducción al Curso de Inglés</h2>
+            @for (section of sections; track section.id) {
+                <div class="item">
+                    <h3>{{section.title}}</h3>
+                </div>
+
                 <ul>
-                    <li><a href="#presentacion">Presentación del curso</a></li>
+                    @for (item of section.items; track $index) {
+                        <li>
+                            <a 
+                                [routerLink]="
+                                    section.id === 'ejercicios'
+                                    ? ['/basico', 'ejercicios', 'tobe']
+                                    : ['/basico', section.id, item.id]
+                                    ">{{item.name}}
+                            </a>
+                        </li>
+                    }
                 </ul>
-
-            <h2>Nivel Básico (A1 - A2)</h2>
-                <ul>
-                    <li><a href="#alphabet">Alfabeto</a></li>
-                    <li><a href="#saludos">Saludos y presentaciones</a></li>
-                    <li><a href="#verbo-ser">Verbo To Be</a></li>
-                    <li><a href="#articulos"> Artículos y sustantivos</a></li>
-                    <li><a href="#pronombres"> Pronombres personales</a></li>
-                    <li><a href="#vocabulario-basico"> Vocabulario básico</a></li>
-                    <li><a href="#preguntas-basicas"> Preguntas básicas (What, Where, When...)</a></li>
-                    <li><a href="#presente-simple"> Presente simple</a></li>
-                    <li><a href="#verbos-comunes"> Verbos comunes</a></li>
-                    <li><a href="#familia-numeros"> Familia y números</a></li>
-                    <li><a href="#colores-dias"> Colores, días, meses</a></li>
-                </ul>
-
-            <h2>Nivel Intermedio (B1 - B2)</h2>
-            <ul>
-                <li><a href="#pasado-simple"> Pasado simple</a></li>
-                <li><a href="#pasado-continuo"> Pasado continuo</a></li>
-                <li><a href="#presente-perfecto"> Presente perfecto</a></li>
-                <li><a href="#comparativos"> Comparativos y superlativos</a></li>
-                <li><a href="#futuro"> Futuro (Will, Going to)</a></li>
-                <li><a href="#condicionales"> Condicionales</a></li>
-                <li><a href="#modales"> Verbos modales</a></li>
-                <li><a href="#pronombres-relativos"> Pronombres relativos</a></li>
-                <li><a href="#vocabulario-intermedio"> Vocabulario intermedio</a></li>
-                <li><a href="#ejercicios-intermedios"> Ejercicios prácticos</a></li>
-            </ul>
-
-            <h2>Nivel Avanzado (C1 - C2)</h2>
-            <ul>
-                <li><a href="#voz-pasiva"> Voz pasiva</a></li>
-                <li><a href="#reported-speech"> Reported Speech</a></li>
-                <li><a href="#phrasal-verbs"> Phrasal Verbs</a></li>
-                <li><a href="#idioms"> Expresiones idiomáticas</a></li>
-                <li><a href="#gerundios-infinitivos"> Gerundios e infinitivos</a></li>
-                <li><a href="#discursos"> Redacción y discurso formal</a></li>
-                <li><a href="#vocabulario-avanzado"> Vocabulario avanzado</a></li>
-                <li><a href="#ejercicios-avanzados"> Ejercicios avanzados</a></li>
-            </ul>
-
-            <h2>Examen Final y Certificación</h2>
-            <ul>
-                <li><a href="#examen"> Examen final</a></li>
-                <li><a href="#certificado"> Obtener certificado</a></li>
-            </ul>
+            }
         </div>
     </section>
 
-
+    <!--Contenido dinámico (contenido)-->
     <section class="seccion2">
-        <div class="ejercicios1">
-            <h2>Presentación del Curso</h2>
-                <p> Bienvenido al curso de inglés desde cero. Este programa ha sido diseñado especialmente para quienes desean aprender inglés de forma clara, estructurada y efectiva, sin importar el nivel de conocimiento previo.
-                    Aquí aprenderás gramática con explicaciones propias, adaptadas para que cualquier persona, incluso sin experiencia previa, pueda comprender cada concepto. Utilizaremos una metodología paso a paso, construyendo bases sólidas que facilitarán tu comprensión y uso del idioma inglés en la vida real.
-
-                    Es muy importante quesigas cada paso con atención, ya que el orden en que te presento los temas no es casual. Cada lección está pensada para que avances con seguridad y no te frustres en el proceso. Si intentas saltarte partes, es probable que luego te sientas perdido. Por eso, mi consejo —y con un poco de firmeza— es que seas constante y respetes el camino propuesto.
-
-                    Recuerda: la constancia es la clave para aprender un idioma. Yo estaré aquí para motivarte a seguir, y cada clase buscará inspirarte a continuar. El compromiso no es conmigo, es contigo mismo y con tu deseo de aprender.
-
-                    Así que… ¡prepárate! Este es el comienzo de un camino emocionante. Si pones de tu parte y no te rindes, te aseguro que los resultados llegarán.
-
-                </p><br><br><br>
-
-            <h2>Alfabeto - Aphabet</h2>
-
-        <div class="introduccion-alfabeto">
-                <p>
-                    Aprender un idioma nuevo es como construir una casa: necesitas una base sólida.
-                    Por eso, en este curso empezamos con el alfabeto en inglés.
-                </p>
-                <p>
-                    El alfabeto es la herramienta principal para poder leer, escribir y pronunciar correctamente. 
-                    En inglés, muchas letras se escriben de una forma pero se pronuncian de otra, por eso 
-                    es fundamental conocerlas bien desde el inicio.
-                </p>
-                <p>
-                    Te invito a practicar con atención y entusiasmo. Recuerda que estás dando un paso importante 
-                    y que tu constancia será la clave para dominar el idioma. ¡Vamos juntos en este camino!
-                </p> <br><br>
-                
-                
-                <p>
-                    | A     | (ei)                     |
-                    | B     | (bi)                     |
-                    | C     | (si)                     |
-                    | D     | (di)                     |
-                    | E     | (i)                      |
-                    | F     | (ef)                     |
-                    | G     | (yi)                     |
-                    | H     | (eich)                   |
-                    | I     | (ai)                     |
-                    | J     | (yei)                    |
-                    | K     | (kei)                    |
-                    | L     | (el)                     |
-                    | M     | (em)                     |
-                    | N     | (en)                     |
-                    | O     | (ou)                     |
-                    | P     | (pi)                     |
-                    | Q     | (kiu)                    |
-                    | R     | (ar)                     |
-                    | S     | (es)                     |
-                    | T     | (ti)                     |
-                    | U     | (iu)                     |
-                    | V     | (vi)                     |
-                    | W     | (dabliu)                 |
-                    | X     | (eks)                    |
-                    | Y     | (guai)                   |
-                    | Z     | (zi o zed)               |
-                </p>
-            </div>
-        </div>
+        <router-outlet></router-outlet>
+    
     </section>
 
-
-    <section class="seccion3">
-            <div class="contacto1">
+    
+    <section class="seccion1">
+        <div class="contacto1">
         <h2>Contacto</h2>
 
         <ul>
             <li><a href="lista">Lista de contactos</a></li>
             <li><a href="agregar">Agregar o eliminar contactos</a></li>
             <li><a href="sincronnizar">Sincronización de contacto</a></li>
-            <li><a href="chat">Chat en linea</a></li>
-            
+            <li><a href="chat">Chat en línea</a></li>
         </ul>
-    </div>
+        </div>
     </section>
-    
+
+
     </main>
+
 

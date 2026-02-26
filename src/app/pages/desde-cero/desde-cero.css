@@ -1,82 +1,136 @@
-
-h1{
-    text-align: center;
-}
-h2{
-    text-align: center;
-}
-a{
-    text-decoration: none;
-}
-.contenedor{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: rgb(211, 209, 209);
-    border-radius: 8px;
-    padding: 7px;
-    gap: 10px;
-}
-.seccion1{
-    background-color: rgb(164, 167, 160);
-    border-radius: 8px;
-    padding: 30px;
-    width: 30%;
-}
-
-.seccion2{
-    background-color: rgb(164, 167, 160);;
-    border-radius: 8px;
-    padding: 30px;
-    width: 40%;
-    text-overflow: inherit;
-}
-.seccion3{
-    background-color: rgb(164, 167, 160);
-    border-radius: 8px;
-    padding: 30px;
-    width: 25%;
-}
-
-.container-Section{
-    background-color: rgb(217, 212, 212);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Contenedor principal */
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
     gap: 20px;
-    font-weight: bolder;
-    position: relative;
-    
-    border-radius: 8px;
-    padding: 30px 20px 30px;
-    
-    
-    
-}
-.container-Section div a{
-    color: white;
-}
-.item{
-    background-color: rgb(16, 8, 77);
-    padding: 25px;
-    border-radius: 8px;
-    font-size: 1.5em;
-    width: 110px;
-    text-align: center;
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-/* Modo responsivo */
-@media (max-width: 760px) {
-    .contenedor{
-        background-color: black;
+/* Título principal */
+h1 {
+    grid-column: 1 / -1; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Secciones */
+    .section1, .seccion1, .seccion2 {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Contenedor de temas */
+.container-Section .item h3 {
+    color: #8187f5;
+    margin-bottom: 10px;
+}
+
+.container-Section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.container-Section li {
+    margin: 8px 0;
+}
+
+.container-Section a {
+    text-decoration: none;
+    color:#2c3e50;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.container-Section a:hover {
+    color: #3498db;
+}
+
+/* Contenido dinámico */
+.seccion2 {
+    min-height: 300px;
+    background-color: #fff;
+    border: 2px solid #eee;
+
+}
+
+/* Contacto */
+.contacto1 h2 {
+    color: #110b66;
+    margin-bottom: 10px;
+}
+
+.contacto1 ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contacto1 li {
+    margin: 6px 0;
+}
+
+.contacto1 a {
+    text-decoration: none;
+    color: #2c3e50;
+    transition: color 0.3s;
+}
+
+.contacto1 a:hover {
+    color: #27ae60;
+}
+
+
+
+    /* Modo responsivo */
+@media (max-width: 768px) {
+        .contenedor {
+            grid-template-columns: 1fr; 
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+        .section1, .seccion1, .seccion2 {
+            margin-bottom: 20px;
+    }
+
+    .container-Section .item h3 {
+        font-size: 1rem;
+    }
+
+    .container-Section a {
+        font-size: 0.95rem;
+    }
+    .seccion2{
         display: flex;
         flex-direction: column;
-        
     }
-    .seccion1,
-    .seccion2,
-    .seccion3{
-        width: 90%;
+
+    .contacto1 h2 {
+        font-size: 1.2rem;
     }
-    
+}
+
+    /* Responsive para pantallas muy pequeñas (celulares compactos) */
+    @media (max-width: 480px) {
+    .contenedor {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    input, button {
+        width: 100%; 
+    }
+
+    .container-Section a {
+        display: block;
+        padding: 8px 0;
+    }
 }

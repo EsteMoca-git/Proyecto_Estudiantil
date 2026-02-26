@@ -3,6 +3,7 @@ import { ReactiveFormsModule, Validators } from '@angular/forms';
 import { FormGroup } from '@angular/forms';
 import { FormControl } from '@angular/forms';
 import { RouterLink } from "@angular/router";
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-home',
@@ -29,6 +30,14 @@ export class Home {
     console.log(this.infoForm.value)
     
     this.infoForm.reset()
+
+    Swal.fire({
+      title: 'Bienvenido!',
+      text: 'Te has logueado satisfactoriamente',
+      icon: 'success',
+      confirmButtonText: 'Aceptar',
+      confirmButtonColor:'skyblue'
+    })
 
 
   }

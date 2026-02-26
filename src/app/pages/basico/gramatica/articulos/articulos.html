@@ -1,0 +1,9 @@
+<h2>Artículos</h2>
+
+<div class="container">
+    @for (item of articulos; track item.word) {
+        <div class="card">
+            <strong>{{item.word}}</strong> - {{item.use}}
+        </div>
+    }
+</div>

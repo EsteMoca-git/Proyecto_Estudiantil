@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from "@angular/router";
+import { ThemeService } from '../../core/theme-service';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +11,7 @@ import { RouterLink } from "@angular/router";
 export class Header {
   menuOpen : boolean
 
-  constructor(){
+  constructor(public themeService : ThemeService ){
     this.menuOpen = false
     
   }
@@ -21,3 +22,5 @@ export class Header {
 
 
 }
+
+

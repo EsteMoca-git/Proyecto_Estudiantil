@@ -1,0 +1,9 @@
+@if (currentItem) {
+    <h2>{{ currentItem.name }}</h2>
+
+    <div class="content">
+    {{ currentItem.content || 'Contenido en construcción...' }}
+    </div>
+} @else {
+    <p>Contenido no encontrado</p>
+}

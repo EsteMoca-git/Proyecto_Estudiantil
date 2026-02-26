@@ -1,0 +1,58 @@
+[
+{
+    "id": "gramatica",
+    "title": "Gramática",
+    "items": [
+    { "id": "tiempos-perfectos", "name": "Tiempos perfectos avanzados", "route": "tiempos-perfectos", "component": "tiempos-perfectos", "content": "" },
+    { "id": "pasado-perfecto-continuo", "name": "Pasado perfecto continuo", "route": "pasado-perfecto-continuo", "component": "pasado-perfecto-continuo", "content": "" },
+    { "id": "futuro-perfecto-continuo", "name": "Futuro perfecto continuo", "route": "futuro-perfecto-continuo", "component": "futuro-perfecto-continuo", "content": "" },
+    { "id": "condicionales-mixtos", "name": "Condicionales mixtos", "route": "condicionales-mixtos", "component": "condicionales-mixtos", "content": "" },
+    { "id": "voz-pasiva-compleja", "name": "Uso de la voz pasiva en estructura compleja", "route": "voz-pasiva-compleja", "component": "voz-pasiva-compleja", "content": "" },
+    { "id": "inversion-enfasis", "name": "Inversión para énfasis", "route": "inversion-enfasis", "component": "inversion-enfasis", "content": "" },
+    { "id": "reported-speech-modales", "name": "Reported speech con modales y tiempos compuestos", "route": "reported-speech-modales", "component": "reported-speech-modales", "content": "" },
+    { "id": "modales-perfectos", "name": "Modales perfectos", "route": "modales-perfectos", "component": "modales-perfectos", "content": "" },
+    { "id": "clausulas-relativas", "name": "Cláusulas de relativa no restrictivas", "route": "clausulas-relativas", "component": "clausulas-relativas", "content": "" },
+    { "id": "conectores-complejos", "name": "Conectores discursivos complejos", "route": "conectores-complejos", "component": "conectores-complejos", "content": "" },
+    { "id": "frases-idiomaticas", "name": "Frases idiomáticas y colocaciones avanzadas", "route": "frases-idiomaticas", "component": "frases-idiomaticas", "content": "" },
+    { "id": "subjuntivo-avanzado", "name": "Subjuntivo avanzado", "route": "subjuntivo-avanzado", "component": "subjuntivo-avanzado", "content": "" }
+    ]
+},
+{
+    "id": "vocabulario",
+    "title": "Vocabulario",
+    "items": [
+    { "id": "vocabulario-academico", "name": "Vocabulario académico", "route": "vocabulario-academico", "component": "vocabulario-academico", "content": "" },
+    { "id": "expresiones-refranes", "name": "Expresiones idiomáticas y refranes", "route": "expresiones-refranes", "component": "expresiones-refranes", "content": "" },
+    { "id": "lenguaje-debates", "name": "Lenguaje para debates y argumentos", "route": "lenguaje-debates", "component": "lenguaje-debates", "content": "" },
+    { "id": "lenguaje-emocional", "name": "Lenguaje emocional y abstracto", "route": "lenguaje-emocional", "component": "lenguaje-emocional", "content": "" },
+    { "id": "colocaciones-comunes", "name": "Colocaciones comunes", "route": "colocaciones-comunes", "component": "colocaciones-comunes", "content": "" },
+    { "id": "phrasal-verbs", "name": "Phrasal verbs avanzado", "route": "phrasal-verbs", "component": "phrasal-verbs", "content": "" },
+    { "id": "lenguaje-tecnico", "name": "Lenguaje técnico y formal (según el contexto)", "route": "lenguaje-tecnico", "component": "lenguaje-tecnico", "content": "" },
+    { "id": "matices-lenguaje", "name": "Matices del lenguaje", "route": "matices-lenguaje", "component": "matices-lenguaje", "content": "" }
+    ]
+},
+{
+    "id": "ejercicios",
+    "title": "Ejercicios",
+    "items": [
+    { "id": "transformar-oraciones", "name": "Transformar oraciones", "route": "transformar-oraciones", "component": "transformar-oraciones", "content": "" },
+    { "id": "completar-textos", "name": "Completar textos con conectores, modales, tiempos verbales", "route": "completar-textos", "component": "completar-textos", "content": "" },
+    { "id": "redaccion-avanzada", "name": "Redacción avanzada", "route": "redaccion-avanzada", "component": "redaccion-avanzada", "content": "" },
+    { "id": "comprension-lectura", "name": "Comprensión de lectura", "route": "comprension-lectura", "component": "comprension-lectura", "content": "" },
+    { "id": "comprension-auditiva", "name": "Comprensión auditiva", "route": "comprension-auditiva", "component": "comprension-auditiva", "content": "" },
+    { "id": "errores-comunes", "name": "Errores comunes: corregir en un texto", "route": "errores-comunes", "component": "errores-comunes", "content": "" },
+    { "id": "debates-roleplays", "name": "Debates o role plays con evaluación de fluidez y vocabulario", "route": "debates-roleplays", "component": "debates-roleplays", "content": "" },
+    { "id": "ejercicios-vocabulario", "name": "Ejercicios de uso preciso de vocabulario", "route": "ejercicios-vocabulario", "component": "ejercicios-vocabulario", "content": "" }
+    ]
+},
+{
+    "id": "contacto",
+    "title": "Contacto",
+    "items": [
+    { "id": "lista-contactos", "name": "Lista de contactos", "route": "lista-contactos", "component": "lista-contactos", "content": "" },
+    { "id": "agregar-eliminar", "name": "Agregar o eliminar contactos", "route": "agregar-eliminar", "component": "agregar-eliminar", "content": "" },
+    { "id": "sincronizacion", "name": "Sincronización de contacto", "route": "sincronizacion", "component": "sincronizacion", "content": "" },
+    { "id": "chat", "name": "Chat en línea", "route": "chat", "component": "chat", "content": "" }
+    ]
+}
+]

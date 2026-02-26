@@ -1,0 +1,49 @@
+[
+{
+"id": "gramatica",
+"title": "Gramática",
+"items": [
+    { "id": "verbos", "name": "Verbos y tiempos verbales", "content": "Contenido sobre verbos y tiempos verbales..." },
+    { "id": "presente", "name": "Tipos de presente", "content": "El presente simple se usa para expresar hábitos, rutinas y hechos generales..." },
+    { "id": "pasado", "name": "Tipos de pasado", "content": "El pasado simple describe acciones terminadas en el pasado..." },
+    { "id": "futuro", "name": "Tipos de futuro", "content": "El futuro se expresa con 'will' o 'going to' según la intención o planificación..." },
+    { "id": "condicional", "name": "Condicional simple y compuesto", "content": "Los condicionales se usan para expresar situaciones hipotéticas y sus consecuencias..." },
+    { "id": "imperativo", "name": "Imperativo afirmativo y negativo", "content": "El imperativo se usa para dar órdenes, instrucciones o consejos..." },
+    { "id": "voz", "name": "Voz pasiva y activa", "content": "La voz pasiva se usa para enfatizar la acción más que el sujeto que la realiza..." }
+]
+},
+{
+"id": "vocabulario",
+"title": "Vocabulario",
+"items": [
+    { "id": "emociones", "name": "Emociones y estado de ánimo", "content": "Happy, sad, angry, excited, nervous..." },
+    { "id": "idiomaticas", "name": "Expresiones comunes idiomáticas", "content": "Expresiones como 'break the ice', 'piece of cake', 'under the weather'..." },
+    { "id": "formal-informal", "name": "Lenguaje formal e informal", "content": "Ejemplos de lenguaje formal: 'Good morning, how are you?' vs informal: 'Hey, what's up?'..." },
+    { "id": "profesiones", "name": "Profesiones y habilidades", "content": "Doctor, teacher, engineer, driver, programmer..." },
+    { "id": "tradiciones", "name": "Tradiciones y costumbres", "content": "Tradiciones culturales como Christmas, Thanksgiving, Halloween..." },
+    { "id": "viajes", "name": "Viajes y experiencias", "content": "Vocabulario relacionado con viajes: airport, ticket, luggage, hotel..." }
+]
+},
+{
+"id": "ejercicios",
+"title": "Ejercicios de vocabulario",
+"items": [
+    { "id": "sopa-letras", "name": "Sopa de letras", "content": "Encuentra las palabras ocultas en la sopa de letras..." },
+    { "id": "crucigrama", "name": "Crucigrama", "content": "Completa el crucigrama con las palabras correctas..." },
+    { "id": "emparejar", "name": "Emparejar palabras", "content": "Relaciona las palabras con sus significados o imágenes..." },
+    { "id": "clasificar", "name": "Clasificar vocabulario", "content": "Clasifica las palabras según categorías: colores, animales, profesiones..." },
+    { "id": "dialogos", "name": "Completar diálogos", "content": "Completa los diálogos con las palabras o frases adecuadas..." },
+    { "id": "memoria", "name": "Juegos de memoria", "content": "Encuentra las parejas de palabras o imágenes relacionadas..." }
+]
+},
+{
+"id": "contacto",
+"title": "Contacto",
+"items": [
+    { "id": "lista-contactos", "name": "Lista de contactos", "content": "Visualiza la lista de contactos disponibles..." },
+    { "id": "agregar-eliminar", "name": "Agregar o eliminar contactos", "content": "Agrega nuevos contactos o elimina los que ya no necesites..." },
+    { "id": "sincronizacion", "name": "Sincronización de contacto", "content": "Sincroniza tus contactos con otros dispositivos o servicios..." },
+    { "id": "chat", "name": "Chat en línea", "content": "Comunícate en tiempo real mediante el chat en línea..." }
+]
+}
+]

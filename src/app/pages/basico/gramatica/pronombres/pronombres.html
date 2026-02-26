@@ -1,0 +1,9 @@
+<h2>Pronombres Personales</h2>
+
+<div class="container">
+    @for (item of pronombres; track item.subject) {
+        <div class="card">
+            <strong>{{item.subject}}</strong> - {{item.meaning}}
+        </div>
+    }
+</div>

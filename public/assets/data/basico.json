@@ -15,19 +15,22 @@
         "id": "pronombres",
         "name": "Pronombres personales",
         "route": "pronombres",
-        "content": "Los pronombres personales remplazan los nombres"
+        "content": "Los pronombres personales remplazan los nombres",
+        "component": "pronombres"
     },
     {
         "id": "tobe",
         "name": "Verbo To Be",
         "route": "tobe",
-        "content": "El verbo To Be se usa para describir estados, identidades y características"
+        "content": "El verbo To Be se usa para describir estados, identidades y características",
+        "component": "tobe"
     },
     {
         "id": "articulos",
         "name": "Articulos definidos e indefinidos",
         "route": "articulos",
-        "content": "Los articulos en inglés se dividen en definidos e indefinidos"
+        "content": "Los articulos en inglés se dividen en definidos e indefinidos",
+        "component": "articulos"
     }
     ]
 },
@@ -40,7 +43,8 @@
             "id": "numeros",
             "name": "Números",
             "route":"numeros",
-            "content": "Los número en inlgés para conocer valores numerícos"
+            "content": "Los número en inlgés para conocer valores numerícos",
+            "component": "numeros"
         },
         {
             "id": "comida",

@@ -1,106 +1,52 @@
 <h1>Nivel Avanzado</h1>
 
-    <main class="contenedor">
-
-        <section class="seccion1">
-            
-            <div class="container-Section">
-        
+<main class="contenedor">
+<!--Titulos y dentro de los títulos los temas con otro FOR-->
+    <section class="section1">
+        <div class="container-Section">
+            @for (section of sections; track section.id) {
                 <div class="item">
-                    <a href="#" data-seccion="gramatica">Gramática</a>
+                    <h3>{{section.title}}</h3>
                 </div>
-
-                <div class="item">
-                    <a href="#" data-seccion="vocabulario">Vocabulario</a>
-                </div>
-
-                <div class="item">
-                    <a href="#" data-seccion="ejercicios">Ejercicios</a>
-                </div>
-
-                <div class="item">
-                    <a href="#" data-seccion="contactos">Contacto</a>
-                </div>
-
-            </div>
-        </section>
-
-
-        <section class="seccion1">
-            <div class="interactuar">
-                <h2 class="titulo">Gramática</h2>
-
-                <ul> 
-                    <li><a href="mixtos">Tiempos perfectos avanzados</a></li>
-                    <li><a href="perfecto">Pasado perfecto continuo</a></li>
-                    <li><a href="futuo">futuro perfecto continuo</a></li>
-                    <li><a href="mixto">Condiconales mixtos</a></li>
-                    <li><a href="pasiva_voz">Uso de la voz pasiva en estructura compleja</a></li>
-                    <li><a href="enfasis">Inversión para énfasis</a></li>
-                    <li><a href="Reported">Reported speech con modales y tiempos compuestos </a></li>
-                    <li><a href="Modales_perfectos">Modales perfectos</a></li>
-                    <li><a href="clausula">Claúsula de relativa no restrictivas</a></li>
-                    <li><a href="conectores_discursivos">Conectores discursivos complejos</a></li>
-                    <li><a href="frases_idiomaticas">Frases idiomáticas y colocaciones avanzadas</a></li>
-                    <li><a href="subjuntivo">Subjuntivo avanzado</a></li>
-                </ul>
-
-            </div>
-        </section>
-
-
-        <section class="seccion1">
-            <div class="vocabulario1">
-                <h2>Vocabulario</h2>
-        
-                <ul>
-                    <li><a href="academico">Vocabulario académico</a></li>
-                    <li><a href="refranes">Expresiones idiomáticas y refranes</a></li>
-                    <li><a href="debate">Lenguaje para debates y argumentos</a></li>
-                    <li><a href="abstracto">Lenguaje emocional y abstracto</a></li>
-                    <li><a href="colocaciones">Colocaciones comunes</a></li>
-                    <li><a href="phrasal">Phrasal verbs avanzado</a></li>
-                    <li><a href="tecnico">Lenguaje ténico y formal (según el contexto)</a></li>
-                    <li><a href="matices">Matices del Lenguaje</a></li>
-                </ul>
-        
-            </div>
-        
-        </section>
-
-
-        <section class="seccion1">
-            <div class="ejercicios1">
-                <h2>Ejercicios</h2>
 
                 <ul>
-                    <li><a href="transformar_oraciones">Transformar oraciones</a></li>
-                    <li><a href="completar">Completar textos con conectores, modales, tiempos verbales</a></li>
-                    <li><a href="redaccion">Redacción avanzada</a></li>
-                    <li><a href="comprension">Comprensión de lectura</a></li>
-                    <li><a href="auditiva">Comprensión auditiva</a></li>
-                    <li><a href="errores">Errores comunes: corregir en un texto</a></li>
-                    <li><a href="evaluacion">Debates o role plays con evaluación de fluidez y vocabulario</a></li>
-                    <li><a href="precisos">Ejercicios de uso preciso de vocabulario</a></li>
+                    @for (item of section.items; track $index) {
+                        <li>
+                            <a 
+                                [routerLink]="
+                                    section.id === 'ejercicios'
+                                    ? ['/basico', 'ejercicios', 'tobe']
+                                    : ['/basico', section.id, item.id]
+                                    ">{{item.name}}
+                            </a>
+                        </li>
+                    }
                 </ul>
-            </div>      
-        </section>
+            }
+        </div>
+    </section>
 
+    <!--Contenido dinámico (contenido)-->
+    <section class="seccion2">
+        <router-outlet></router-outlet>
+    
+    </section>
 
-        <section class="seccion1">
-            <div class="contacto1">
-                <h2>Contacto</h2>
+    
+    <section class="seccion1">
+        <div class="contacto1">
+        <h2>Contacto</h2>
 
-                <ul>
-                    <li><a href="lista">Lista de contactos</a></li>
-                    <li><a href="agregar">Agregar o eliminar contactos</a></li>
-                    <li><a href="sincronnizar">Sincronización de contacto</a></li>
-                    <li><a href="chat">Chat en linea</a></li>
-                </ul>
-            </div>
-        </section>
+        <ul>
+            <li><a href="lista">Lista de contactos</a></li>
+            <li><a href="agregar">Agregar o eliminar contactos</a></li>
+            <li><a href="sincronnizar">Sincronización de contacto</a></li>
+            <li><a href="chat">Chat en línea</a></li>
+        </ul>
+        </div>
+    </section>
+
 
     </main>
-
 
 

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { EjerciciosService } from '../../../../services/ejercicios.service';
 import { CompletarEjercicio } from '../../../../models/completar';
 import { ActivatedRoute } from '@angular/router';
+import { EjerciciosService } from '../../../../services/basico/ejercicios.service';
 
 @Component({
   selector: 'app-completar',
@@ -34,6 +34,8 @@ export class Completar implements OnInit {
     }
     console.log('temaId desde la ruta:', temaId);
     console.log('topics disponibles:', this.ejerciciosService);
+    console.log(this.ejercicios);
+    console.log('Ejercicio actual:', this.currentExercise);
 
 
 
@@ -46,6 +48,8 @@ export class Completar implements OnInit {
     
     this.ejercicios = topic.exercises;
     this.loadExercise()
+    console.log('Topic encontrado:', topic);
+    console.log('Exercises del topic:', topic?.exercises);  
   }
 
   
@@ -56,6 +60,7 @@ export class Completar implements OnInit {
     this.currentExercise = this.ejercicios[this.currentIndex];
     this.userAnswer = '';
     this.result = null
+    console.log('El ejercicio que está leyendo es: ', this.currentExercise)
   }
 
   checkAnswer(): void {
@@ -63,7 +68,7 @@ export class Completar implements OnInit {
 
 
     const user = this.userAnswer.trim().toLowerCase()
-    const correct = this.currentExercise?.correctAnswer.toLocaleLowerCase();
+    const correct = this.currentExercise.correctAnswer.toLowerCase();
     
 
     this.result = user === correct ?  'correct' : 'incorrect'

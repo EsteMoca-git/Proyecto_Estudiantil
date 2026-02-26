@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
-import { AudioService } from '../../../../services/audio-service';
+import { AudioService } from '../../../../services/basico/audio-service';
 
 @Component({
   selector: 'app-alfabeto',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './alfabeto.html',
   styleUrl: './alfabeto.css',
 })

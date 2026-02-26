@@ -1,14 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { BasicService } from '../../../services/basic-service';
+
 import { BasicItem } from '../../../models/basic-model';
 import { CommonModule, NgComponentOutlet } from '@angular/common';
 import { Alfabeto } from '../gramatica/alfabeto/alfabeto';
 import { Completar } from '../ejercicios/completar/completar';
+import { BasicService } from '../../../services/basico/basic-service';
+import { Pronombres } from '../gramatica/pronombres/pronombres';
+import { ToBe } from '../gramatica/to-be/to-be';
+import { Articulos } from '../gramatica/articulos/articulos';
+import { Numeros } from '../vocabulario/numeros/numeros';
 
 const COMPONENT_MAP : Record<string, any> = {
   alfabeto: Alfabeto,
   completar: Completar,
+  pronombres: Pronombres,
+  tobe: ToBe,
+  articulos: Articulos,
+  numeros: Numeros,
 };
 
 @Component({
@@ -35,7 +44,8 @@ export class Tema implements OnInit {
 
       this.basicService.getBasicSections().subscribe(sections => {
         const section = sections.find(s => s.id === sectionsId);
-        this.tema = section?.items.find(item => item.id === temaId)
+        this.tema = section?.items.find((item: BasicItem) => item.id === temaId);
+
       
       console.log('Tema cargado: ', this.tema)
 

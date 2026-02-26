@@ -7,3 +7,37 @@ body{
     
     
 }
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.app-layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+
+/* MODO CLARO */
+body.light header {
+  background-color: #ffffff;
+}
+
+body.light section {
+  background-color: #f1f5f9;
+}
+
+/* MODO OSCURO */
+body.dark header {
+  background-color: #1e293b;
+}
+
+body.dark section {
+  background-color: #243047;
+}
