@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { AvanzadoModel } from '../../models/advancedModels/Avanzado-Model';
 import { InglesDesdeCero } from '../../services/inglesDesdeCero/ingles-desde-cero';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { DesdeCeroModel } from '../../models/InglesDesdeCero/inglesDesdeCero';
 
 @Component({
   selector: 'app-desde-cero',
@@ -11,13 +11,13 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   styleUrl: './desde-cero.css',
 })
 export class DesdeCero {
-  sections : AvanzadoModel[]= []
+  sections : DesdeCeroModel[]= []
     
   
     constructor(public inglesDesdeCeroService : InglesDesdeCero){}
   
   ngOnInit(): void {
-    this.inglesDesdeCeroService.getBasicSections().subscribe(data => {
+    this.inglesDesdeCeroService.getDesdeCeroSections().subscribe(data => {
       this.sections = data;
     });
   

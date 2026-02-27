@@ -19,7 +19,7 @@ export class Avanzado implements OnInit {
   constructor(public avanzadoService : AvanzadoService){}
 
 ngOnInit(): void {
-  this.avanzadoService.getBasicSections().subscribe(data => {
+  this.avanzadoService.getAvanzadoSections().subscribe(data => {
     this.sections = data;
   });
 

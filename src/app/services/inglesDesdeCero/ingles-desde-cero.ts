@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BasicModel } from '../../models/basic-model';
 import { Observable } from 'rxjs';
+import { DesdeCeroModel } from '../../models/InglesDesdeCero/inglesDesdeCero';
 
 @Injectable({
   providedIn: 'root',
@@ -9,9 +9,9 @@ import { Observable } from 'rxjs';
 export class InglesDesdeCero {
   private dataUrl = 'assets/data/inglesDesdeCero.json'
 
-  constructor(private httpinglesDesdeCero : HttpClient){}
+  constructor(private httpDesdeCero : HttpClient){}
 
-  getBasicSections(): Observable<BasicModel[]> {
-    return this.httpinglesDesdeCero.get<BasicModel[]>(this.dataUrl);
+  getDesdeCeroSections(): Observable<DesdeCeroModel[]> {
+    return this.httpDesdeCero.get<DesdeCeroModel[]>(this.dataUrl);
   }
 }

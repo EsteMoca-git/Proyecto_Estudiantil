@@ -10,6 +10,12 @@ import { Pronombres } from '../gramatica/pronombres/pronombres';
 import { ToBe } from '../gramatica/to-be/to-be';
 import { Articulos } from '../gramatica/articulos/articulos';
 import { Numeros } from '../vocabulario/numeros/numeros';
+import { IntermediateService } from '../../../services/intermedio/intermediate-service';
+import { IntermediateItem, IntermediateModel } from '../../../models/intermediateModels/Intermediate-Model';
+import { AvanzadoService } from '../../../services/avanzado/avanzado-service';
+import { AvanzadoItem, AvanzadoModel } from '../../../models/advancedModels/Avanzado-Model';
+import { InglesDesdeCero } from '../../../services/inglesDesdeCero/ingles-desde-cero';
+import { desdeCeroItem, DesdeCeroModel } from '../../../models/InglesDesdeCero/inglesDesdeCero';
 
 const COMPONENT_MAP : Record<string, any> = {
   alfabeto: Alfabeto,
@@ -28,13 +34,18 @@ const COMPONENT_MAP : Record<string, any> = {
   styleUrls: ['./tema.css',]
 })
 export class Tema implements OnInit {
-
+  contenido: any;
+  itemCurrent: any;
+  currentItem: any;
   tema? : BasicItem;
   componentToRender : any = null;
 
   constructor(
     private route: ActivatedRoute,
-    private basicService : BasicService
+    private basicService : BasicService,
+    private intermediateService : IntermediateService,
+    private avanzadoService : AvanzadoService,
+    private desdeCeroService: InglesDesdeCero
   ){}
 
   ngOnInit(): void {
@@ -54,6 +65,79 @@ export class Tema implements OnInit {
 
       })
 
-    })
+    });
+
+
+    //Renderizando los temas del nivel intermedio en el mismo componente tema
+  this.route.paramMap.subscribe(params => {
+    const seccion = params.get('seccion');
+    const tema = params.get('tema');
+
+    this.intermediateService
+      .getItermediateSections()
+      .subscribe((data: IntermediateModel[]) => {
+
+        const section = data.find(
+          (s: IntermediateModel) => s.id === seccion
+        );
+
+        if (section) {
+          this.currentItem = section.items.find(
+            (i: IntermediateItem) => i.id === tema
+          );
+        }
+
+      });
+  });
+
+
+  //Renderizado de los temaas Avanzados
+  
+  this.route.paramMap.subscribe(params => {
+    const seccion = params.get('seccion');
+    const tema = params.get('tema');
+
+    this.avanzadoService
+      .getAvanzadoSections()
+      .subscribe((data: AvanzadoModel[]) => {
+
+        const section = data.find(
+          (s: AvanzadoModel) => s.id === seccion
+        );
+
+        if (section) {
+          this.itemCurrent = section.items.find(
+            (i: AvanzadoItem) => i.id === tema
+          );
+        }
+
+      });
+  });
+
+
+
+  //Renderizado de Desde Cero
+  
+  this.route.paramMap.subscribe(params => {
+    const seccion = params.get('seccion');
+    const tema = params.get('tema');
+
+    this.desdeCeroService
+      .getDesdeCeroSections()
+      .subscribe((data: DesdeCeroModel[]) => {
+
+        const section = data.find(
+          (s: DesdeCeroModel) => s.id === seccion
+        );
+
+        if (section) {
+          this.contenido = section.items.find(
+            (i: desdeCeroItem) => i.id === tema
+          );
+        }
+
+      });
+  });
+
 }
 }

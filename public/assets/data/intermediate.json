@@ -3,13 +3,108 @@
 "id": "gramatica",
 "title": "Gramática",
 "items": [
-    { "id": "verbos", "name": "Verbos y tiempos verbales", "content": "Contenido sobre verbos y tiempos verbales..." },
-    { "id": "presente", "name": "Tipos de presente", "content": "El presente simple se usa para expresar hábitos, rutinas y hechos generales..." },
-    { "id": "pasado", "name": "Tipos de pasado", "content": "El pasado simple describe acciones terminadas en el pasado..." },
-    { "id": "futuro", "name": "Tipos de futuro", "content": "El futuro se expresa con 'will' o 'going to' según la intención o planificación..." },
-    { "id": "condicional", "name": "Condicional simple y compuesto", "content": "Los condicionales se usan para expresar situaciones hipotéticas y sus consecuencias..." },
-    { "id": "imperativo", "name": "Imperativo afirmativo y negativo", "content": "El imperativo se usa para dar órdenes, instrucciones o consejos..." },
-    { "id": "voz", "name": "Voz pasiva y activa", "content": "La voz pasiva se usa para enfatizar la acción más que el sujeto que la realiza..." }
+    {
+    "id": "presente",
+    "name": "Tipos de presente",
+    "theory": {
+        "description": "El presente simple se usa para hábitos, rutinas y hechos generales.",
+        "formula": {
+        "affirmative": "Subject + Verb + Complement",
+        "negative": "Subject + do/does + not + Verb + Complement",
+        "question": "Do/Does + Subject + Verb + Complement?"
+        },
+        "examples": [
+        "I work every day.",
+        "She works every day.",
+        "Do you work every day?"
+        ]
+    }
+    },
+    {
+    "id": "pasado",
+    "name": "Tipos de pasado",
+    "theory": {
+        "description": "El pasado simple se usa para acciones terminadas en un momento específico del pasado.",
+        "formula": {
+        "affirmative": "Subject + Verb (past form) + Complement",
+        "negative": "Subject + did + not + Verb (base form) + Complement",
+        "question": "Did + Subject + Verb (base form) + Complement?"
+        },
+        "examples": [
+        "I visited London last year.",
+        "She cooked dinner yesterday.",
+        "Did you watch the movie?"
+        ]
+    }
+    },
+    {
+    "id": "futuro",
+    "name": "Tipos de futuro",
+    "theory": {
+        "description": "El futuro se expresa con 'will' para decisiones espontáneas y 'going to' para planes o intenciones.",
+        "formula": {
+        "affirmative": "Subject + will/going to + Verb + Complement",
+        "negative": "Subject + will/going to + not + Verb + Complement",
+        "question": "Will/Is + Subject + going to + Verb + Complement?"
+        },
+        "examples": [
+        "I will call you tomorrow.",
+        "She is going to study medicine.",
+        "Will you join us tonight?"
+        ]
+    }
+    },
+    {
+    "id": "condicional",
+    "name": "Condicional simple y compuesto",
+    "theory": {
+        "description": "El condicional se usa para expresar situaciones hipotéticas y sus consecuencias.",
+        "formula": {
+        "affirmative": "If + Subject + Verb (past), Subject + would + Verb",
+        "negative": "If + Subject + did + not + Verb, Subject + would + not + Verb",
+        "question": "Would + Subject + Verb if + Subject + Verb (past)?"
+        },
+        "examples": [
+        "If I had money, I would travel.",
+        "She would help if she had time.",
+        "Would you go if I invited you?"
+        ]
+    }
+    },
+    {
+    "id": "imperativo",
+    "name": "Imperativo afirmativo y negativo",
+    "theory": {
+        "description": "El imperativo se usa para dar órdenes, instrucciones o consejos.",
+        "formula": {
+        "affirmative": "Verb (base form) + Complement",
+        "negative": "Do not + Verb (base form) + Complement",
+        "question": "Imperatives are not usually used as questions."
+        },
+        "examples": [
+        "Open the window.",
+        "Do not touch that!",
+        "Please sit down."
+        ]
+    }
+    },
+    {
+    "id": "voz",
+    "name": "Voz pasiva y activa",
+    "theory": {
+        "description": "La voz pasiva se usa para enfatizar la acción más que el sujeto que la realiza.",
+        "formula": {
+        "affirmative": "Subject + to be + Past Participle + (by Agent)",
+        "negative": "Subject + to be + not + Past Participle",
+        "question": "Is/Was + Subject + Past Participle (by Agent)?"
+        },
+        "examples": [
+        "The letter was written by John.",
+        "The house is cleaned every day.",
+        "Was the book read by Mary?"
+        ]
+    }
+    }
 ]
 },
 {

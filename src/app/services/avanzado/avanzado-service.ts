@@ -9,10 +9,10 @@ import { Observable } from 'rxjs';
 export class AvanzadoService {
   private dataUrl = 'assets/data/avanzado.json'
 
-  constructor(private httpavanzado : HttpClient){}
+  constructor(private httpAvanzado : HttpClient){}
 
-  getBasicSections(): Observable<AvanzadoModel[]> {
-    return this.httpavanzado.get<AvanzadoModel[]>(this.dataUrl);
+  getAvanzadoSections(): Observable<AvanzadoModel[]> {
+    return this.httpAvanzado.get<AvanzadoModel[]>(this.dataUrl);
   }
 }
 

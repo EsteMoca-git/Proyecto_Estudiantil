@@ -26,8 +26,17 @@ export const routes: Routes = [
         {path: ':seccion/:tema', component: Tema}
         
     ]},
-    {path: 'avanzado', component: Avanzado},
-    {path: 'desde_cero', component: DesdeCero},
+    {
+    path: 'avanzado', component: Avanzado, children: [
+        { path: 'ejercicios/:tema', component: Completar },
+        { path: ':seccion/:tema', component: Tema }
+    ]
+    },
+    {path: 'desde_cero', component: DesdeCero, children: [
+        { path: 'ejercicios/:tema', component: Completar },
+        { path: ':seccion/:tema', component: Tema }
+    ]
+    },
     {path: 'form', component: Form},
     
 ];

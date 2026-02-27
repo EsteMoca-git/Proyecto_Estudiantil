@@ -1,58 +1,131 @@
 [
 {
-    "id": "gramatica",
-    "title": "Gramática",
-    "items": [
-    { "id": "tiempos-perfectos", "name": "Tiempos perfectos avanzados", "route": "tiempos-perfectos", "component": "tiempos-perfectos", "content": "" },
-    { "id": "pasado-perfecto-continuo", "name": "Pasado perfecto continuo", "route": "pasado-perfecto-continuo", "component": "pasado-perfecto-continuo", "content": "" },
-    { "id": "futuro-perfecto-continuo", "name": "Futuro perfecto continuo", "route": "futuro-perfecto-continuo", "component": "futuro-perfecto-continuo", "content": "" },
-    { "id": "condicionales-mixtos", "name": "Condicionales mixtos", "route": "condicionales-mixtos", "component": "condicionales-mixtos", "content": "" },
-    { "id": "voz-pasiva-compleja", "name": "Uso de la voz pasiva en estructura compleja", "route": "voz-pasiva-compleja", "component": "voz-pasiva-compleja", "content": "" },
-    { "id": "inversion-enfasis", "name": "Inversión para énfasis", "route": "inversion-enfasis", "component": "inversion-enfasis", "content": "" },
-    { "id": "reported-speech-modales", "name": "Reported speech con modales y tiempos compuestos", "route": "reported-speech-modales", "component": "reported-speech-modales", "content": "" },
-    { "id": "modales-perfectos", "name": "Modales perfectos", "route": "modales-perfectos", "component": "modales-perfectos", "content": "" },
-    { "id": "clausulas-relativas", "name": "Cláusulas de relativa no restrictivas", "route": "clausulas-relativas", "component": "clausulas-relativas", "content": "" },
-    { "id": "conectores-complejos", "name": "Conectores discursivos complejos", "route": "conectores-complejos", "component": "conectores-complejos", "content": "" },
-    { "id": "frases-idiomaticas", "name": "Frases idiomáticas y colocaciones avanzadas", "route": "frases-idiomaticas", "component": "frases-idiomaticas", "content": "" },
-    { "id": "subjuntivo-avanzado", "name": "Subjuntivo avanzado", "route": "subjuntivo-avanzado", "component": "subjuntivo-avanzado", "content": "" }
-    ]
+"id": "gramatica",
+"title": "Gramática",
+"items": [
+    {
+    "id": "tiempos-perfectos",
+    "name": "Tiempos perfectos avanzados",
+    "theory": {
+        "description": "Uso de tiempos perfectos para expresar acciones completadas con relevancia en el presente o futuro.",
+        "formula": {
+        "affirmative": "Subject + have/has + Past Participle",
+        "negative": "Subject + have/has + not + Past Participle",
+        "question": "Have/Has + Subject + Past Participle?"
+        },
+        "examples": [
+        "She has finished her thesis.",
+        "They have not completed the project.",
+        "Have you ever visited Paris?"
+        ]
+    }
+    },
+    {
+    "id": "pasado-perfecto-continuo",
+    "name": "Pasado perfecto continuo",
+    "theory": {
+        "description": "Se usa para describir acciones que estaban en progreso antes de otra acción pasada.",
+        "formula": {
+        "affirmative": "Subject + had been + Verb(-ing) + Complement",
+        "negative": "Subject + had not been + Verb(-ing) + Complement",
+        "question": "Had + Subject + been + Verb(-ing) + Complement?"
+        },
+        "examples": [
+        "She had been studying before the exam started.",
+        "They had not been working long when the manager arrived.",
+        "Had you been waiting for a long time?"
+        ]
+    }
+    },
+    {
+    "id": "futuro-perfecto-continuo",
+    "name": "Futuro perfecto continuo",
+    "theory": {
+        "description": "Se usa para expresar acciones que estarán en progreso hasta un momento específico en el futuro.",
+        "formula": {
+        "affirmative": "Subject + will have been + Verb(-ing) + Complement",
+        "negative": "Subject + will not have been + Verb(-ing) + Complement",
+        "question": "Will + Subject + have been + Verb(-ing) + Complement?"
+        },
+        "examples": [
+        "By next year, I will have been working here for five years.",
+        "She will not have been living in London for long.",
+        "Will you have been studying English for ten years by then?"
+        ]
+    }
+    },
+    {
+    "id": "condicionales-mixtos",
+    "name": "Condicionales mixtos",
+    "theory": {
+        "description": "Combinan diferentes tiempos verbales para expresar situaciones hipotéticas complejas.",
+        "formula": {
+        "affirmative": "If + Subject + had + Past Participle, Subject + would + Verb (present/future)",
+        "negative": "If + Subject + had not + Past Participle, Subject + would not + Verb (present/future)",
+        "question": "Would + Subject + Verb if + Subject + had + Past Participle?"
+        },
+        "examples": [
+        "If I had studied harder, I would be at university now.",
+        "She would travel more if she had saved money.",
+        "Would you be happier if you had chosen another career?"
+        ]
+    }
+    },
+    {
+    "id": "voz-pasiva-compleja",
+    "name": "Uso de la voz pasiva en estructura compleja",
+    "theory": {
+        "description": "Aplicación de la voz pasiva en oraciones con múltiples cláusulas o tiempos compuestos.",
+        "formula": {
+        "affirmative": "Subject + to be + Past Participle + (by Agent)",
+        "negative": "Subject + to be + not + Past Participle",
+        "question": "Is/Was + Subject + Past Participle (by Agent)?"
+        },
+        "examples": [
+        "The report has been written by the committee.",
+        "The project was not completed on time.",
+        "Was the book translated into Spanish?"
+        ]
+    }
+    }
+]
 },
 {
-    "id": "vocabulario",
-    "title": "Vocabulario",
-    "items": [
-    { "id": "vocabulario-academico", "name": "Vocabulario académico", "route": "vocabulario-academico", "component": "vocabulario-academico", "content": "" },
-    { "id": "expresiones-refranes", "name": "Expresiones idiomáticas y refranes", "route": "expresiones-refranes", "component": "expresiones-refranes", "content": "" },
-    { "id": "lenguaje-debates", "name": "Lenguaje para debates y argumentos", "route": "lenguaje-debates", "component": "lenguaje-debates", "content": "" },
-    { "id": "lenguaje-emocional", "name": "Lenguaje emocional y abstracto", "route": "lenguaje-emocional", "component": "lenguaje-emocional", "content": "" },
-    { "id": "colocaciones-comunes", "name": "Colocaciones comunes", "route": "colocaciones-comunes", "component": "colocaciones-comunes", "content": "" },
-    { "id": "phrasal-verbs", "name": "Phrasal verbs avanzado", "route": "phrasal-verbs", "component": "phrasal-verbs", "content": "" },
-    { "id": "lenguaje-tecnico", "name": "Lenguaje técnico y formal (según el contexto)", "route": "lenguaje-tecnico", "component": "lenguaje-tecnico", "content": "" },
-    { "id": "matices-lenguaje", "name": "Matices del lenguaje", "route": "matices-lenguaje", "component": "matices-lenguaje", "content": "" }
-    ]
+"id": "vocabulario",
+"title": "Vocabulario",
+"items": [
+    { "id": "academico", "name": "Vocabulario académico", "content": "Palabras y expresiones usadas en contextos académicos y formales." },
+    { "id": "refranes", "name": "Expresiones idiomáticas y refranes", "content": "Frases hechas y refranes comunes en inglés avanzado." },
+    { "id": "debates", "name": "Lenguaje para debates y argumentos", "content": "Vocabulario y expresiones para argumentar y debatir." },
+    { "id": "emocional", "name": "Lenguaje emocional y abstracto", "content": "Palabras para expresar sentimientos, emociones y conceptos abstractos." },
+    { "id": "colocaciones", "name": "Colocaciones comunes", "content": "Combinaciones frecuentes de palabras que suenan naturales en inglés." },
+    { "id": "phrasal-verbs", "name": "Phrasal verbs avanzado", "content": "Uso de phrasal verbs en contextos complejos y formales." },
+    { "id": "tecnico-formal", "name": "Lenguaje técnico y formal", "content": "Vocabulario especializado según el contexto profesional o académico." },
+    { "id": "matices", "name": "Matices del lenguaje", "content": "Diferencias sutiles en significado y uso de palabras." }
+]
 },
 {
-    "id": "ejercicios",
-    "title": "Ejercicios",
-    "items": [
-    { "id": "transformar-oraciones", "name": "Transformar oraciones", "route": "transformar-oraciones", "component": "transformar-oraciones", "content": "" },
-    { "id": "completar-textos", "name": "Completar textos con conectores, modales, tiempos verbales", "route": "completar-textos", "component": "completar-textos", "content": "" },
-    { "id": "redaccion-avanzada", "name": "Redacción avanzada", "route": "redaccion-avanzada", "component": "redaccion-avanzada", "content": "" },
-    { "id": "comprension-lectura", "name": "Comprensión de lectura", "route": "comprension-lectura", "component": "comprension-lectura", "content": "" },
-    { "id": "comprension-auditiva", "name": "Comprensión auditiva", "route": "comprension-auditiva", "component": "comprension-auditiva", "content": "" },
-    { "id": "errores-comunes", "name": "Errores comunes: corregir en un texto", "route": "errores-comunes", "component": "errores-comunes", "content": "" },
-    { "id": "debates-roleplays", "name": "Debates o role plays con evaluación de fluidez y vocabulario", "route": "debates-roleplays", "component": "debates-roleplays", "content": "" },
-    { "id": "ejercicios-vocabulario", "name": "Ejercicios de uso preciso de vocabulario", "route": "ejercicios-vocabulario", "component": "ejercicios-vocabulario", "content": "" }
-    ]
+"id": "ejercicios",
+"title": "Ejercicios de vocabulario",
+"items": [
+    { "id": "transformar-oraciones", "name": "Transformar oraciones", "content": "Ejercicios para reestructurar oraciones usando diferentes tiempos y estructuras." },
+    { "id": "completar-textos", "name": "Completar textos con conectores, modales, tiempos verbales", "content": "Ejercicios de completar párrafos con elementos gramaticales avanzados." },
+    { "id": "redaccion-avanzada", "name": "Redacción avanzada", "content": "Prácticas de escritura con cohesión, coherencia y vocabulario avanzado." },
+    { "id": "lectura", "name": "Comprensión de lectura", "content": "Ejercicios de análisis y comprensión de textos complejos." },
+    { "id": "auditiva", "name": "Comprensión auditiva", "content": "Ejercicios de escucha para identificar vocabulario y estructuras avanzadas." },
+    { "id": "errores-comunes", "name": "Errores comunes: corregir en un texto", "content": "Identificación y corrección de errores frecuentes en inglés avanzado." },
+    { "id": "debates-roleplays", "name": "Debates o role plays con evaluación de fluidez y vocabulario", "content": "Actividades de debate y dramatización para practicar fluidez y vocabulario." },
+    { "id": "uso-vocabulario", "name": "Ejercicios de uso preciso de vocabulario", "content": "Prácticas para elegir la palabra más adecuada según el contexto." }
+]
 },
 {
-    "id": "contacto",
-    "title": "Contacto",
-    "items": [
-    { "id": "lista-contactos", "name": "Lista de contactos", "route": "lista-contactos", "component": "lista-contactos", "content": "" },
-    { "id": "agregar-eliminar", "name": "Agregar o eliminar contactos", "route": "agregar-eliminar", "component": "agregar-eliminar", "content": "" },
-    { "id": "sincronizacion", "name": "Sincronización de contacto", "route": "sincronizacion", "component": "sincronizacion", "content": "" },
-    { "id": "chat", "name": "Chat en línea", "route": "chat", "component": "chat", "content": "" }
-    ]
+"id": "contacto",
+"title": "Contacto",
+"items": [
+    { "id": "lista-contactos", "name": "Lista de contactos", "content": "Visualiza la lista de contactos disponibles..." },
+    { "id": "agregar-eliminar", "name": "Agregar o eliminar contactos", "content": "Agrega nuevos contactos o elimina los que ya no necesites..." },
+    { "id": "sincronizacion", "name": "Sincronización de contacto", "content": "Sincroniza tus contactos con otros dispositivos o servicios..." },
+    { "id": "chat", "name": "Chat en línea", "content": "Comunícate en tiempo real mediante el chat en línea..." }
+]
 }
 ]

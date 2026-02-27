@@ -8,9 +8,85 @@
         <h2>{{tema?.content}}</h2>
     }
 
-
-
 </section>
 
+
+<!--Renderizado de los temas Intermedios-->
+
+@if (currentItem) {
+<div class="tema-container">
+
+<h2 class="tema-title">{{ currentItem.name }}</h2>
+
+<!-- Si es gramática -->
+@if (currentItem.theory) {
+    <p class="description">
+    {{ currentItem.theory.description }}
+    </p>
+
+    <div class="formula-box">
+    <h3> Fórmula</h3>
+    <p><strong>Afirmativa:</strong> {{ currentItem.theory.formula.affirmative }}</p>
+    <p><strong>Negativa:</strong> {{ currentItem.theory.formula.negative }}</p>
+    <p><strong>Pregunta:</strong> {{ currentItem.theory.formula.question }}</p>
+    </div>
+
+    <div class="examples-box">
+    <h3> Ejemplos</h3>
+    <ul>
+        @for (example of currentItem.theory.examples; track $index) {
+        <li>{{ example }}</li>
+        }
+    </ul>
+    </div>
+}
+
+
+<!-- Si es solo contenido normal -->
+@if (currentItem.content) {
+    <p>{{ currentItem.content }}</p>
+}
+
+</div>
+}
+
+
+<!--Renderizado del contenido Avanzado-->
+
+<div>
+    @if (contenido) {
+        <div class="tema-container">    
+            <h2 class="tema-title">{{ contenido.name }}</h2>
+
+            <!-- Si es gramática -->
+            @if (contenido.theory) {
+                <p class="description">{{ contenido.theory.description }}</p>
+
+            <div class="formula-box">
+                    <h3> Fórmula</h3> 
+                        <p><strong>Afirmativa:</strong> {{ contenido.theory.formula.affirmative }}</p>
+                        <p><strong>Negativa:</strong> {{ contenido.theory.formula.negative }}</p>
+                        <p><strong>Pregunta:</strong> {{ contenido.theory.formula.question }}</p>
+            </div>
+
+            <div class="examples-box">
+                    <h3>Ejemplos</h3>
+                <ul>
+                    @for (example of contenido.theory.examples; track $index) {
+                        <li>{{ example }}</li>
+                    }   
+                </ul>
+            </div>
+    }
+    
+    <!-- Si es solo contenido normal -->
+        @if (contenido.content) {
+            <p>{{ contenido.content }}</p>
+        }
+
+</div>
+}
+
+</div>
 
 
