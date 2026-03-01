@@ -7,6 +7,7 @@ import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-home',
+  standalone: true,
   imports: [ReactiveFormsModule, RouterLink],
   templateUrl: './home.html',
   styleUrls: ['./home.css'],
@@ -22,8 +23,8 @@ export class Home {
 
     this.infoForm = new FormGroup({
       correo: this.email,
-      contraseña: this.password
-    }) 
+      password: this.password
+    });
   }
 
   enviarForm(): void{

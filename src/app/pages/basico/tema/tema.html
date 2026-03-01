@@ -54,25 +54,25 @@
 <!--Renderizado del contenido Avanzado-->
 
 <div>
-    @if (contenido) {
+    @if (itemCurrent) {
         <div class="tema-container">    
-            <h2 class="tema-title">{{ contenido.name }}</h2>
+            <h2 class="tema-title">{{ itemCurrent.name }}</h2>
 
             <!-- Si es gramática -->
-            @if (contenido.theory) {
-                <p class="description">{{ contenido.theory.description }}</p>
+            @if (itemCurrent.theory) {
+                <p class="description">{{ itemCurrent.theory.description }}</p>
 
             <div class="formula-box">
                     <h3> Fórmula</h3> 
-                        <p><strong>Afirmativa:</strong> {{ contenido.theory.formula.affirmative }}</p>
-                        <p><strong>Negativa:</strong> {{ contenido.theory.formula.negative }}</p>
-                        <p><strong>Pregunta:</strong> {{ contenido.theory.formula.question }}</p>
+                        <p><strong>Afirmativa:</strong> {{ itemCurrent.theory.formula.affirmative }}</p>
+                        <p><strong>Negativa:</strong> {{ itemCurrent.theory.formula.negative }}</p>
+                        <p><strong>Pregunta:</strong> {{ itemCurrent.theory.formula.question }}</p>
             </div>
 
             <div class="examples-box">
                     <h3>Ejemplos</h3>
                 <ul>
-                    @for (example of contenido.theory.examples; track $index) {
+                    @for (example of itemCurrent.theory.examples; track $index) {
                         <li>{{ example }}</li>
                     }   
                 </ul>
@@ -80,8 +80,8 @@
     }
     
     <!-- Si es solo contenido normal -->
-        @if (contenido.content) {
-            <p>{{ contenido.content }}</p>
+        @if (itemCurrent.content) {
+            <p>{{ itemCurrent.content }}</p>
         }
 
 </div>

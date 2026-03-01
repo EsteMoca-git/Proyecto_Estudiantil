@@ -12,9 +12,9 @@
         <input type="email" id="correo" formControlName = "correo" placeholder="Usuario@gmail.com" >
 
         <label for="contraseña" >Ingresar Conraseña</label>
-        <input type="password" id="contraseña" formControlName="contraseña" placeholder="contraseña">
+        <input type="password" formControlName="password">
 
-        <button class="enviar-form" [disabled]="infoForm.invalid" >Enviar</button>
+        <button type="submit" class="enviar-form" [disabled]="infoForm.invalid" >Enviar</button>
     </form>
 
 </div>
