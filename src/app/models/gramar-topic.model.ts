@@ -1,4 +1,4 @@
-import { CompletarEjercicio } from "./completar";
+import { CompletarEjercicio } from "../models/completar";
 
 export interface GramarTopic {
     id: string;

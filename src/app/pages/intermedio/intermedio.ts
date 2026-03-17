@@ -18,7 +18,7 @@ export class Intermedio implements OnInit {
   constructor(public intermediateService: IntermediateService) {}
 
   ngOnInit(): void {
-    this.intermediateService.getItermediateSections().subscribe((data: IntermediateModel[]) => {
+    this.intermediateService.getIntermediateSections().subscribe((data: IntermediateModel[]) => {
       this.sections = data;
     });
   }

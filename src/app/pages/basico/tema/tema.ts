@@ -74,7 +74,7 @@ export class Tema implements OnInit {
     const tema = params.get('tema');
 
     this.intermediateService
-      .getItermediateSections()
+      .getIntermediateSections()
       .subscribe((data: IntermediateModel[]) => {
 
         const section = data.find(

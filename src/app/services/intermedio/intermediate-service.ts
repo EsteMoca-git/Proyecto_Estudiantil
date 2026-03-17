@@ -8,12 +8,18 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class IntermediateService {
-  private dataUrlIntermediate = 'assets/data/intermediate.json'
+  
 
-  constructor(private httpIntermediate : HttpClient){}
+  private useBackend = true;
+  private backendUrl = 'http://localhost:3000/intermediate';
+  private jsonUrl = 'assets/data/intermediate.json';
 
-  getItermediateSections(): Observable<IntermediateModel[]> {
-    return this.httpIntermediate.get<IntermediateModel[]>(this.dataUrlIntermediate);
+
+  constructor(private http : HttpClient){}
+
+  getIntermediateSections(): Observable<IntermediateModel[]> {
+    const url = this.useBackend ? this.backendUrl : this.jsonUrl;
+    return this.http.get<IntermediateModel[]>(url);
   }
 }
 

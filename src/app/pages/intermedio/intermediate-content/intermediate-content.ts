@@ -23,7 +23,7 @@ export class IntermediateContent implements OnInit {
     const sectionId = this.route.snapshot.paramMap.get('sectionId');
     const itemId = this.route.snapshot.paramMap.get('itemId');
 
-    this.intermediateService.getItermediateSections()
+    this.intermediateService.getIntermediateSections()
       .subscribe((sections: IntermediateModel[]) => {
 
         const section = sections.find(s => s.id === sectionId);
